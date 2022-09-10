@@ -47,7 +47,12 @@ func init() {
 	flag.StringVar(&parentPath, "p", "", "parent path")
 	flag.Var(&exn, "exn", "exclude path")
 	flag.BoolVar(&sync, "sync", false, "sync")
+	concurrent := flag.Int("c", 16, "concurrent upload thread")
 	flag.Parse()
+
+	// set the custom concurrent number
+	model.Concurrent = int64(*concurrent)
+
 	for _, r := range exn {
 		reg, err := regexp.Compile(r)
 		if err != nil {
