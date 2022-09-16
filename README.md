@@ -35,3 +35,8 @@ go build
 ```bash
 ./pikpakupload -exn ".mp3$" -exn ".jpg" -p Movies .
 ```
+
+指定上传的协程数目(默认为16)
+```bash
+./pikpakupload -c 20 -p Movies .
+```
