@@ -3,3 +3,8 @@
 .DS_Store
 .pikpaksync.txt
 config.yml
+dist/
+
+.goreleaser.yaml
+pikpakupload
+pikpakupload.exe
