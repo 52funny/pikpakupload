@@ -2,6 +2,18 @@
 
 Pikpak 的上传工具
 
+<br>
+<br>
+
+## 新的项目 [pikpakcli](https://github.com/52funny/pikpakcli)
+
+新的项目支持很多新的命令，欢迎 👏 使用新的项目
+
+详情请参考项目[pikpakcli](https://github.com/52funny/pikpakcli)
+
+<br>
+<br>
+
 > 首先将`config_example.yml`配置一下, 输入自己的账号密码
 >
 > 账号要以区号开头 如 `+861xxxxxxxxxx`
@@ -36,7 +48,8 @@ go build
 ./pikpakupload -exn ".mp3$" -exn ".jpg" -p Movies .
 ```
 
-指定上传的协程数目(默认为16)
+指定上传的协程数目(默认为 16)
+
 ```bash
 ./pikpakupload -c 20 -p Movies .
 ```
